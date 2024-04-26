@@ -2,7 +2,7 @@
 ### Cars
 
 - Each car has a unique identifier called `car_id`.
-- The `car_type_id` tells us what type of car it is, like econom, comfort  etc.
+- The `car_type_id` refers to the `car_types` table that indicates the type of car
 - It has a registration number and a VIN code to uniquely identify it.
 - We store details like the manufacturer, model, year, color, and number of seats.
 - Other information includes fuel type, transmission type, and the last odometer reading.
@@ -20,11 +20,11 @@
 
 - Each agreement has a unique identifier called `agreement_id`.
 - It's linked to an employee who handles the agreement.
-- It's also associated with a rental and a payment.
 
 ### Car Types
 
 - Different types of cars are stored here, each with a unique `car_type_id`.
+- `car_type` tells us what type of car it is, like econom, comfort  etc.
 - We describe the type of car and its daily rental price.
 
 ### Payments
@@ -42,8 +42,7 @@
 ### Branches
 
 - Each branch of the rental company has its own unique identifier.
-- We store its address, city, region, postal code, and contact number.
-- There's also a manager associated with each branch.
+- We store its address, city, region, postal code, and phone number.
 
 ### Employees
 
@@ -51,4 +50,3 @@
 - We link them to the branch they work at and store their personal information.
 - This includes their name, birth date, address, and contact details.
 - Additionally, we track their salary and who they report to within the company.
-- An employee can be a branch manager
