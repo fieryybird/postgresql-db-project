@@ -59,7 +59,8 @@ CREATE TABLE IF NOT EXISTS rentals (
     start_odometer INT NOT NULL,
     end_odometer INT,
     start_branch INT NOT NULL,
-    end_branch INT
+    end_branch INT,
+	CONSTRAINT check_date CHECK (start_date < end_date)
 );
 
 CREATE TABLE IF NOT EXISTS branches (
