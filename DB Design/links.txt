@@ -1,0 +1,7 @@
+Schema: 
+https://erd.dbdesigner.net/designer/schema/1713973155-car-rental-database
+
+ERM:
+https://drive.google.com/file/d/1U0yLTfm2aksNOJyicv_E5-DeLjRdBZUB/view
+
+
