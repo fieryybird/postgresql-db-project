@@ -86,18 +86,36 @@ FROM
     employees;
 
 
--- 5) Updatable View (editable columns): view for managing the salary of employees
+-- 5) Updatable View (editable columns).
+
+-- employees salary management view
 
   
-CREATE VIEW employee_salaries_views AS
+CREATE OR REPLACE VIEW employee_salaries_views AS
 SELECT 
-		employee_id,
-		first_name,
-		last_name,
-		salary,
-		branch_id
-FROM employees
+	e.first_name,
+	e.last_name,
+	e.salary
+FROM
+	employees e
+	
 
+-- list of employees without confidential salary information
+
+CREATE OR REPLACE VIEW employees_list_view AS
+SELECT 
+	e.employee_id,
+	e.branch_id,
+	e.first_name,
+	e.last_name,
+	e.birth_date,
+	e.address,
+	e.city,
+	e.region,
+	e.email,
+	e.reports_to
+FROM 
+	employees e
 
 
 -- 6) View on the Select from Another View: car availability in different branches, detailed info for New York
