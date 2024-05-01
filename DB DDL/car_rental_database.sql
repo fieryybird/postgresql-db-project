@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS cars (
     vin_code VARCHAR(50) UNIQUE NOT NULL,
     manufacturer VARCHAR(50) NOT NULL,
     model VARCHAR(100) NOT NULL,
-    year DATE NOT NULL,
+    year SMALLINT NOT NULL,
     color VARCHAR(50) NOT NULL,
     number_of_seats SMALLINT,
     fuel_type VARCHAR(25) NOT NULL,
@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS employees (
     city VARCHAR(50) NOT NULL,
     region VARCHAR(50),
     email VARCHAR(255) UNIQUE,
-    salary DECIMAL(10,2) NOT NULL,
+    salary DECIMAL(10,2),
     reports_to INT,
 	CONSTRAINT fk_reports_to FOREIGN KEY (reports_to) REFERENCES employees(employee_id)
 );
