@@ -89,7 +89,6 @@ FROM
 -- 5) Updatable View (editable columns).
 
 -- employees salary management view
-
   
 CREATE OR REPLACE VIEW employee_salaries_views AS
 SELECT 
@@ -117,9 +116,7 @@ SELECT
 FROM 
 	employees e
 
-
 -- 6) View on the Select from Another View: car availability in different branches, detailed info for New York
-
 
 CREATE OR REPLACE VIEW branches_inventory_view AS    
 SELECT 
@@ -153,6 +150,20 @@ WHERE
     b.city LIKE 'New York'
 
 
--- 7) View with Check Option: 
-   
-  
+-- 7) View with Check Option: updatable cars
+    
+CREATE OR REPLACE VIEW updatable_car_view AS
+SELECT 
+	c.car_id,
+	c.color,
+	c.manufacturer,
+	c.model,
+	c."year",
+	c.last_inspected_odometer AS odometer,
+	c.branch_id 
+FROM 
+	cars AS c
+WHERE 
+	c.year BETWEEN 2000 AND EXTRACT(YEAR FROM NOW()) AND
+	c.branch_id BETWEEN 1 AND 5
+WITH CHECK OPTION;
