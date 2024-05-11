@@ -179,11 +179,11 @@ BEGIN
     THEN
         RAISE EXCEPTION 'The Car is not avaliable';
     END IF;
-    IF _start_date >= _end_date 
+    IF _start_date > _end_date 
     THEN
         RAISE EXCEPTION 'Start date must be before end date';
     END IF;
-    IF _end_date > NOW()
+    IF _end_date >= NOW() AND _start_date <= NOW()
     THEN
         _is_available = FALSE;
     ELSE
