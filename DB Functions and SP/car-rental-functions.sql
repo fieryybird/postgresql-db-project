@@ -143,7 +143,6 @@ BEGIN
             last_inspected_odometer = _last_inspected_odometer
         WHERE car_id = _car_id;
 
-    COMMIT;
 END
 $$
 LANGUAGE plpgsql;
@@ -209,6 +208,5 @@ BEGIN
 END
 $$
 LANGUAGE plpgsql;
-COMMIT;
 
 -- CALL add_rentals(5, 17, '2024-05-01', '2024-05-08', 2, 20139);
