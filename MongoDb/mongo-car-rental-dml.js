@@ -1173,7 +1173,6 @@ const cars = db.cars.find().toArray();
 const customers = db.customers.find().toArray();
 const employees = db.employees.find().toArray();
 
-// Rental data to be inserted with hard-coded branch_id values
 const rentals = [
     {
         registration_number: "ERS-8579",
@@ -1542,8 +1541,8 @@ rentals.forEach(rental => {
   );
   const start_date = new Date(rental.start_date);
   const end_date = new Date(rental.end_date);
-  const rental_days = Math.ceil((end_date - start_date) / (1000 * 60 * 60 * 24)); // Calculate rental days
-  const total_amount = rental_days * car.daily_price; // Calculate total amount
+  const rental_days = Math.ceil((end_date - start_date) / (1000 * 60 * 60 * 24)); 
+  const total_amount = rental_days * car.daily_price;
 
   db.rentals.insertOne({
     car: {
@@ -1576,38 +1575,5 @@ rentals.forEach(rental => {
 });
 
 
-
-// completed rental example 
-    
-db.rentals_test.insertOne({
-    start_date: "2024-01-07",
-    end_date: "2024-01-10",
-    start_odometer: 38657,
-    end_odometer: 39042,
-    start_branch: "NY-1",
-    end_branch: "NY-1",
-    car: {
-      _id: "6645c7975e048b1226990454",
-      model: "Fortwo",
-      manufacturer: "Smart",
-      registration_number: "ERS-8579"
-    },
-    customer: {
-      _id: "664496daf4fec3962423bd48",
-      first_name: "John",
-      last_name: "Smith",
-      phone_number: "123-456-789",
-      email: "john.smith@gmail.com"
-    },
-    agreement: {
-      employee_id: "664496daf4fec3962423bd48",
-      employee_first_name: "Alexander",
-      employee_last_name: "Scott",
-      payment_date: "2024-01-06",
-      total_amount: 200.00
-    }
-  });
-
-  // ? чи потрібен окремий rental_id / rental_number щоб зручніше звертатися з кверями до ренталів
  
 
