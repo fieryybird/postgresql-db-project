@@ -61,7 +61,7 @@ db.createCollection("cars", {
                 "availability_status": {
                     "bsonType": "bool"
                 },
-                "branch_id": {
+                "branch_name": {
                     "bsonType": "string"
                 }
             },
@@ -79,7 +79,7 @@ db.createCollection("cars", {
                 "fuel_type",
                 "transmission",
                 "availability_status",
-                "branch_id"
+                "branch_name"
             ]
         }
     },
@@ -99,7 +99,7 @@ db.createCollection("branches", {
                 "_id": {
                     "bsonType": "objectId"
                 },
-                "branch_id": {
+                "branch_name": {
                     "bsonType": "string"
                 },
                 "address": {
@@ -121,7 +121,7 @@ db.createCollection("branches", {
             "additionalProperties": false,
             "required": [
                 "_id",
-                "branch_id",
+                "branch_name",
                 "address",
                 "city",
                 "region",
@@ -238,7 +238,7 @@ db.createCollection("employees", {
                 "branch": {
                     "bsonType": "object",
                     "properties": {
-                        "branch_id": {
+                        "branch_name": {
                             "bsonType": "string"
                         },
                         "address": {
@@ -259,7 +259,7 @@ db.createCollection("employees", {
                     },
                     "additionalProperties": false,
                     "required": [
-                        "branch_id",
+                        "branch_name",
                         "address",
                         "city",
                         "region",
@@ -389,17 +389,17 @@ db.createCollection("rentals", {
                 "end_odometer": {
                     "bsonType": "string"
                 },
-                "start_branch": {
+                "start_branch_name": {
                     "bsonType": "string"
                 },
-                "end_branch": {
+                "end_branch_name": {
                     "bsonType": "string"
                 }
             },
             "additionalProperties": false,
             "dependencies": {
-                "end_branch": [
-                    "start_branch"
+                "end_branch_name": [
+                    "start_branch_name"
                 ],
                 "end_odometer": [
                     "start_odometer"
@@ -412,7 +412,7 @@ db.createCollection("rentals", {
                 "start_date",
                 "end_date",
                 "start_odometer",
-                "start_branch"
+                "start_branch_name"
             ]
         }
     },

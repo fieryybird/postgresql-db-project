@@ -251,7 +251,7 @@ db.customers.insertMany([
 
 db.branches.insertMany([
   {
-      branch_id: "NY-1",
+      branch_name: "NY-1",
       address: "123 Main St",
       city: "New York",
       region: "NY",
@@ -259,7 +259,7 @@ db.branches.insertMany([
       phone_number: "555-1234"
   },
   {
-      branch_id: "LA-1",
+      branch_name: "LA-1",
       address: "3031 Malibu Lane",
       city: "Los Angeles",
       region: "CA",
@@ -267,7 +267,7 @@ db.branches.insertMany([
       phone_number: "555-5678"
   },
   {
-      branch_id: "CH-1",
+      branch_name: "CH-1",
       address: "3031 N Clark St",
       city: "Chicago",
       region: "IL",
@@ -275,7 +275,7 @@ db.branches.insertMany([
       phone_number: "555-9101"
   },
   {
-      branch_id: "HST-1",
+      branch_name: "HST-1",
       address: "101 Pine St",
       city: "Houston",
       region: "TX",
@@ -283,7 +283,7 @@ db.branches.insertMany([
       phone_number: "555-1212"
   },
   {
-      branch_id: "STL-1",
+      branch_name: "STL-1",
       address: "229 Rainier Ave",
       city: "Seattle",
       region: "WA",
@@ -306,7 +306,7 @@ db.employees.insertMany([
         email: "john.doe@car-rental.com",
         salary: 60000.00,
         branch: {
-          branch_id: "NY-1",
+          branch_name: "NY-1",
           address: "123 Main St",
           city: "New York",
           region: "NY",
@@ -324,7 +324,7 @@ db.employees.insertMany([
         email: "jane.smith@car-rental.com",
         salary: 55000.00,
         branch: {
-          branch_id: "NY-1",
+          branch_name: "NY-1",
           address: "123 Main St",
           city: "New York",
           region: "NY",
@@ -342,7 +342,7 @@ db.employees.insertMany([
         email: "michael.johnson@car-rental.com",
         salary: 62000.00,
         branch: {
-          branch_id: "LA-1",
+          branch_name: "LA-1",
           address: "3031 Malibu Lane",
           city: "Los Angeles",
           region: "CA",
@@ -360,7 +360,7 @@ db.employees.insertMany([
         email: "emily.brown@car-rental.com",
         salary: 53000.00,
         branch: {
-          branch_id: "LA-1",
+          branch_name: "LA-1",
           address: "3031 Malibu Lane",
           city: "Los Angeles",
           region: "CA",
@@ -378,7 +378,7 @@ db.employees.insertMany([
         email: "christopher.williams@car-rental.com",
         salary: 61000.00,
         branch: {
-          branch_id: "CH-1",
+          branch_name: "CH-1",
           address: "3031 N Clark St",
           city: "Chicago",
           region: "IL",
@@ -396,7 +396,7 @@ db.employees.insertMany([
         email: "amanda.jones@car-rental.com",
         salary: 54000.00,
         branch: {
-          branch_id: "CH-1",
+          branch_name: "CH-1",
           address: "3031 N Clark St",
           city: "Chicago",
           region: "IL",
@@ -414,7 +414,7 @@ db.employees.insertMany([
         email: "daniel.brown@car-rental.com",
         salary: 62000.00,
         branch: {
-          branch_id: "HST-1",
+          branch_name: "HST-1",
           address: "101 Pine St",
           city: "Houston",
           region: "TX",
@@ -432,7 +432,7 @@ db.employees.insertMany([
         email: "sarah.miller@car-rental.com",
         salary: 56000.00,
         branch: {
-          branch_id: "HST-1",
+          branch_name: "HST-1",
           address: "101 Pine St",
           city: "Houston",
           region: "TX",
@@ -450,7 +450,7 @@ db.employees.insertMany([
         email: "matthew.martinez@car-rental.com",
         salary: 63000.00,
         branch: {
-          branch_id: "STL-1",
+          branch_name: "STL-1",
           address: "229 Rainier Ave",
           city: "Seattle",
           region: "WA",
@@ -468,7 +468,7 @@ db.employees.insertMany([
         email: "olivia.taylor@car-rental.com",
         salary: 57000.00,
         branch: {
-          branch_id: "STL-1",
+          branch_name: "STL-1",
           address: "229 Rainier Ave",
           city: "Seattle",
           region: "WA",
@@ -486,7 +486,7 @@ db.employees.insertMany([
       email: "david.wilson@car-rental.com",
       salary: 51000.00,
       branch: {
-          branch_id: "NY-1",
+          branch_name: "NY-1",
           address: "123 Main St",
           city: "New York",
           region: "NY",
@@ -504,7 +504,7 @@ db.employees.insertMany([
       email: "jessica.garcia@car-rental.com",
       salary: 54000.00,
       branch: {
-          branch_id: "LA-1",
+          branch_name: "LA-1",
           address: "3031 Malibu Lane",
           city: "Los Angeles",
           region: "CA",
@@ -522,7 +522,7 @@ db.employees.insertMany([
       email: "william.rodriguez@car-rental.com",
       salary: 55000.00,
       branch: {
-          branch_id: "CH-1",
+          branch_name: "CH-1",
           address: "3031 N Clark St",
           city: "Chicago",
           region: "IL",
@@ -540,7 +540,7 @@ db.employees.insertMany([
       email: "sophia.hernandez@car-rental.com",
       salary: 58000.00,
       branch: {
-          branch_id: "HST-1",
+          branch_name: "HST-1",
           address: "101 Pine St",
           city: "Houston",
           region: "TX",
@@ -558,7 +558,7 @@ db.employees.insertMany([
       email: "james.lopez@car-rental.com",
       salary: 52000.00,
       branch: {
-          branch_id: "STL-1",
+          branch_name: "STL-1",
           address: "229 Rainier Ave",
           city: "Seattle",
           region: "WA",
@@ -576,7 +576,7 @@ db.employees.insertMany([
       email: "ashley.gonzalez@car-rental.com",
       salary: 55000.00,
       branch: {
-          branch_id: "NY-1",
+          branch_name: "NY-1",
           address: "123 Main St",
           city: "New York",
           region: "NY",
@@ -594,7 +594,7 @@ db.employees.insertMany([
       email: "benjamin.perez@car-rental.com",
       salary: 56000.00,
       branch: {
-          branch_id: "LA-1",
+          branch_name: "LA-1",
           address: "3031 Malibu Lane",
           city: "Los Angeles",
           region: "CA",
@@ -612,7 +612,7 @@ db.employees.insertMany([
       email: "mia.sanchez@car-rental.com",
       salary: 53000.00,
       branch: {
-          branch_id: "CH-1",
+          branch_name: "CH-1",
           address: "3031 N Clark St",
           city: "Chicago",
           region: "IL",
@@ -630,7 +630,7 @@ db.employees.insertMany([
       email: "ethan.rivera@car-rental.com",
       salary: 57000.00,
       branch: {
-          branch_id: "HST-1",
+          branch_name: "HST-1",
           address: "101 Pine St",
           city: "Houston",
           region: "TX",
@@ -648,7 +648,7 @@ db.employees.insertMany([
       email: "emma.barnes@car-rental.com",
       salary: 54000.00,
       branch: {
-          branch_id: "STL-1",
+          branch_name: "STL-1",
           address: "229 Rainier Ave",
           city: "Seattle",
           region: "WA",
@@ -666,7 +666,7 @@ db.employees.insertMany([
       email: "alexander.scott@car-rental.com",
       salary: 56000.00,
       branch: {
-          branch_id: "NY-1",
+          branch_name: "NY-1",
           address: "123 Main St",
           city: "New York",
           region: "NY",
@@ -684,7 +684,7 @@ db.employees.insertMany([
       email: "madison.green@car-rental.com",
       salary: 55000.00,
       branch: {
-          branch_id: "LA-1",
+          branch_name: "LA-1",
           address: "3031 Malibu Lane",
           city: "Los Angeles",
           region: "CA",
@@ -702,7 +702,7 @@ db.employees.insertMany([
       email: "noah.adams@car-rental.com",
       salary: 54000.00,
       branch: {
-          branch_id: "CH-1",
+          branch_name: "CH-1",
           address: "3031 N Clark St",
           city: "Chicago",
           region: "IL",
@@ -720,7 +720,7 @@ db.employees.insertMany([
       email: "chloe.gomez@car-rental.com",
       salary: 58000.00,
       branch: {
-          branch_id: "HST-1",
+          branch_name: "HST-1",
           address: "101 Pine St",
           city: "Houston",
           region: "TX",
@@ -738,7 +738,7 @@ db.employees.insertMany([
       email: "elijah.kelly@car-rental.com",
       salary: 52000.00,
       branch: {
-          branch_id: "STL-1",
+          branch_name: "STL-1",
           address: "229 Rainier Ave",
           city: "Seattle",
           region: "WA",
@@ -756,7 +756,7 @@ db.employees.insertMany([
       email: "grace.howard@car-rental.com",
       salary: 57000.00,
       branch: {
-          branch_id: "NY-1",
+          branch_name: "NY-1",
           address: "123 Main St",
           city: "New York",
           region: "NY",
@@ -774,7 +774,7 @@ db.employees.insertMany([
       email: "avery.richardson@car-rental.com",
       salary: 56000.00,
       branch: {
-          branch_id: "LA-1",
+          branch_name: "LA-1",
           address: "3031 Malibu Lane",
           city: "Los Angeles",
           region: "CA",
@@ -792,7 +792,7 @@ db.employees.insertMany([
       email: "logan.myers@car-rental.com",
       salary: 55000.00,
       branch: {
-          branch_id: "CH-1",
+          branch_name: "CH-1",
           address: "3031 N Clark St",
           city: "Chicago",
           region: "IL",
@@ -810,7 +810,7 @@ db.employees.insertMany([
       email: "sofia.diaz@car-rental.com",
       salary: 54000.00,
       branch: {
-          branch_id: "HST-1",
+          branch_name: "HST-1",
           address: "101 Pine St",
           city: "Houston",
           region: "TX",
@@ -828,7 +828,7 @@ db.employees.insertMany([
       email: "lucas.russell@car-rental.com",
       salary: 59000.00,
       branch: {
-          branch_id: "STL-1",
+          branch_name: "STL-1",
           address: "229 Rainier Ave",
           city: "Seattle",
           region: "WA",
@@ -856,7 +856,7 @@ db.cars.insertMany([
       availability_status: true,
       car_type: "Econom",
       daily_price: 50.00,
-      branch_id: "NY-1"
+      branch_name: "NY-1"
     },
     {
       registration_number: "799-XYF",
@@ -872,7 +872,7 @@ db.cars.insertMany([
       availability_status: true,
       car_type: "Econom",
       daily_price: 50.00,
-      branch_id: "STL-1"
+      branch_name: "STL-1"
     },
     {
       registration_number: "D36-8BN",
@@ -888,7 +888,7 @@ db.cars.insertMany([
       availability_status: true,
       car_type: "Econom",
       daily_price: 50.00,
-      branch_id: "LA-1"
+      branch_name: "LA-1"
     },
     {
       registration_number: "H37-XY2",
@@ -904,7 +904,7 @@ db.cars.insertMany([
       availability_status: true,
       car_type: "Econom",
       daily_price: 50.00,
-      branch_id: "NY-1"
+      branch_name: "NY-1"
     },
     {
       registration_number: "B57-XY9",
@@ -920,7 +920,7 @@ db.cars.insertMany([
       availability_status: true,
       car_type: "Standard",
       daily_price: 70.00,
-      branch_id: "CH-1"
+      branch_name: "CH-1"
     },
     {
       registration_number: "G98-ZY3",
@@ -936,7 +936,7 @@ db.cars.insertMany([
       availability_status: false,
       car_type: "Standard",
       daily_price: 70.00,
-      branch_id: "CH-1"
+      branch_name: "CH-1"
     },
     {
       registration_number: "J88-9YH",
@@ -952,7 +952,7 @@ db.cars.insertMany([
       availability_status: false,
       car_type: "Standard",
       daily_price: 70.00,
-      branch_id: "HST-1"
+      branch_name: "HST-1"
     },
     {
       registration_number: "L90-3GJ",
@@ -968,7 +968,7 @@ db.cars.insertMany([
       availability_status: true,
       car_type: "Standard",
       daily_price: 70.00,
-      branch_id: "LA-1"
+      branch_name: "LA-1"
     },
     {
       registration_number: "W34-EF9",
@@ -984,7 +984,7 @@ db.cars.insertMany([
       availability_status: false,
       car_type: "Business",
       daily_price: 100.00,
-      branch_id: "STL-1"
+      branch_name: "STL-1"
     },
     {
       registration_number: "Q65-4RF",
@@ -1000,7 +1000,7 @@ db.cars.insertMany([
       availability_status: false,
       car_type: "Business",
       daily_price: 100.00,
-      branch_id: "NY-1"
+      branch_name: "NY-1"
     },
     {
       registration_number: "R22-VB6",
@@ -1016,7 +1016,7 @@ db.cars.insertMany([
       availability_status: true,
       car_type: "Business",
       daily_price: 100.00,
-      branch_id: "CH-1"
+      branch_name: "CH-1"
     },
     {
       registration_number: "S39-6GH",
@@ -1032,7 +1032,7 @@ db.cars.insertMany([
       availability_status: true,
       car_type: "Business",
       daily_price: 100.00,
-      branch_id: "NY-1"
+      branch_name: "NY-1"
     },
     {
       registration_number: "U44-JK7",
@@ -1048,7 +1048,7 @@ db.cars.insertMany([
       availability_status: true,
       car_type: "Business",
       daily_price: 100.00,
-      branch_id: "CH-1"
+      branch_name: "CH-1"
     },
     {
       registration_number: "V55-KL8",
@@ -1064,7 +1064,7 @@ db.cars.insertMany([
       availability_status: true,
       car_type: "Premium",
       daily_price: 150.00,
-      branch_id: "HST-1"
+      branch_name: "HST-1"
     },
     {
       registration_number: "X66-MN4",
@@ -1080,7 +1080,7 @@ db.cars.insertMany([
       availability_status: true,
       car_type: "Premium",
       daily_price: 150.00,
-      branch_id: "LA-1"
+      branch_name: "LA-1"
     },
     {
       registration_number: "Y77-OP5",
@@ -1096,7 +1096,7 @@ db.cars.insertMany([
       availability_status: true,
       car_type: "Premium",
       daily_price: 150.00,
-      branch_id: "NY-1"
+      branch_name: "NY-1"
     },
     {
       registration_number: "Z88-QQ6",
@@ -1112,7 +1112,7 @@ db.cars.insertMany([
       availability_status: true,
       car_type: "Premium",
       daily_price: 150.00,
-      branch_id: "CH-1"
+      branch_name: "CH-1"
     },
     {
       registration_number: "A99-RR7",
@@ -1128,7 +1128,7 @@ db.cars.insertMany([
       availability_status: true,
       car_type: "Premium",
       daily_price: 150.00,
-      branch_id: "CH-1"
+      branch_name: "CH-1"
     },
     {
       registration_number: "C11-ST8",
@@ -1144,7 +1144,7 @@ db.cars.insertMany([
       availability_status: true,
       car_type: "Premium",
       daily_price: 150.00,
-      branch_id: "NY-1"
+      branch_name: "NY-1"
     },
     {
       registration_number: "E33-UV9",
@@ -1160,7 +1160,7 @@ db.cars.insertMany([
       availability_status: true,
       car_type: "Premium",
       daily_price: 150.00,
-      branch_id: "HST-1"
+      branch_name: "HST-1"
     }
   ]);
   
@@ -1169,6 +1169,7 @@ db.cars.insertMany([
 // Create collection - "rentals"
 
 // Fetch all necessary data
+
 const cars = db.cars.find().toArray();
 const customers = db.customers.find().toArray();
 const employees = db.employees.find().toArray();
@@ -1182,8 +1183,8 @@ const rentals = [
         end_date: "2024-01-10",
         start_odometer: 38657,
         end_odometer: 39042,
-        start_branch_id: "NY-1",
-        end_branch_id: "NY-1"
+        start_branch_name: "NY-1",
+        end_branch_name: "NY-1"
     },
     {
         registration_number: "ERS-8579",
@@ -1193,8 +1194,8 @@ const rentals = [
         end_date: "2024-01-20",
         start_odometer: 39042,
         end_odometer: 41073,
-        start_branch_id: "NY-1",
-        end_branch_id: "NY-1"
+        start_branch_name: "NY-1",
+        end_branch_name: "NY-1"
     },
     {
         registration_number: "799-XYF",
@@ -1204,8 +1205,8 @@ const rentals = [
         end_date: "2024-01-08",
         start_odometer: 25960,
         end_odometer: 27082,
-        start_branch_id: "NY-1",
-        end_branch_id: "NY-1"
+        start_branch_name: "NY-1",
+        end_branch_name: "NY-1"
     },
     {
         registration_number: "D36-8BN",
@@ -1215,8 +1216,8 @@ const rentals = [
         end_date: "2024-01-15",
         start_odometer: 50512,
         end_odometer: 53024,
-        start_branch_id: "LA-1",
-        end_branch_id: "STL-1"
+        start_branch_name: "LA-1",
+        end_branch_name: "STL-1"
     },
     {
         registration_number: "D36-8BN",
@@ -1226,8 +1227,8 @@ const rentals = [
         end_date: "2024-01-28",
         start_odometer: 53024,
         end_odometer: 54012,
-        start_branch_id: "STL-1",
-        end_branch_id: "LA-1"
+        start_branch_name: "STL-1",
+        end_branch_name: "LA-1"
     },
     {
         registration_number: "H37-XY2",
@@ -1237,8 +1238,8 @@ const rentals = [
         end_date: "2024-01-12",
         start_odometer: 18930,
         end_odometer: 20034,
-        start_branch_id: "LA-1",
-        end_branch_id: "HST-1"
+        start_branch_name: "LA-1",
+        end_branch_name: "HST-1"
     },
     {
         registration_number: "B57-XY9",
@@ -1248,8 +1249,8 @@ const rentals = [
         end_date: "2024-01-15",
         start_odometer: 12728,
         end_odometer: 13058,
-        start_branch_id: "CH-1",
-        end_branch_id: "CH-1"
+        start_branch_name: "CH-1",
+        end_branch_name: "CH-1"
     },
     {
         registration_number: "G98-ZY3",
@@ -1259,8 +1260,8 @@ const rentals = [
         end_date: "2024-01-25",
         start_odometer: 89641,
         end_odometer: 91743,
-        start_branch_id: "NY-1",
-        end_branch_id: "CH-1"
+        start_branch_name: "NY-1",
+        end_branch_name: "CH-1"
     },
     {
         registration_number: "J88-9YH",
@@ -1270,8 +1271,8 @@ const rentals = [
         end_date: "2024-01-12",
         start_odometer: 123901,
         end_odometer: 125837,
-        start_branch_id: "STL-1",
-        end_branch_id: "HST-1"
+        start_branch_name: "STL-1",
+        end_branch_name: "HST-1"
     },
     {
         registration_number: "L90-3GJ",
@@ -1281,8 +1282,8 @@ const rentals = [
         end_date: "2024-01-23",
         start_odometer: 45220,
         end_odometer: 46347,
-        start_branch_id: "LA-1",
-        end_branch_id: "HST-1"
+        start_branch_name: "LA-1",
+        end_branch_name: "HST-1"
     },
     {
         registration_number: "W34-EF9",
@@ -1292,8 +1293,8 @@ const rentals = [
         end_date: "2024-01-14",
         start_odometer: 67986,
         end_odometer: 68127,
-        start_branch_id: "HST-1",
-        end_branch_id: "STL-1"
+        start_branch_name: "HST-1",
+        end_branch_name: "STL-1"
     },
     {
         registration_number: "Q65-4RF",
@@ -1303,8 +1304,8 @@ const rentals = [
         end_date: "2024-01-20",
         start_odometer: 29360,
         end_odometer: 30258,
-        start_branch_id: "LA-1",
-        end_branch_id: "NY-1"
+        start_branch_name: "LA-1",
+        end_branch_name: "NY-1"
     },
     {
         registration_number: "R22-VB6",
@@ -1314,8 +1315,8 @@ const rentals = [
         end_date: "2024-01-30",
         start_odometer: 87000,
         end_odometer: 87546,
-        start_branch_id: "NY-1",
-        end_branch_id: "CH-1"
+        start_branch_name: "NY-1",
+        end_branch_name: "CH-1"
     },
     {
         registration_number: "S39-6GH",
@@ -1325,8 +1326,8 @@ const rentals = [
         end_date: "2024-02-05",
         start_odometer: 45601,
         end_odometer: 46035,
-        start_branch_id: "LA-1",
-        end_branch_id: "NY-1"
+        start_branch_name: "LA-1",
+        end_branch_name: "NY-1"
     },
     {
         registration_number: "U44-JK7",
@@ -1336,8 +1337,8 @@ const rentals = [
         end_date: "2024-02-15",
         start_odometer: 60000,
         end_odometer: 61259,
-        start_branch_id: "CH-1",
-        end_branch_id: "CH-1"
+        start_branch_name: "CH-1",
+        end_branch_name: "CH-1"
     },
     {
         registration_number: "V55-KL8",
@@ -1347,8 +1348,8 @@ const rentals = [
         end_date: "2024-02-25",
         start_odometer: 10007,
         end_odometer: 10734,
-        start_branch_id: "HST-1",
-        end_branch_id: "HST-1"
+        start_branch_name: "HST-1",
+        end_branch_name: "HST-1"
     },
     {
         registration_number: "X66-MN4",
@@ -1358,8 +1359,8 @@ const rentals = [
         end_date: "2024-03-03",
         start_odometer: 20012,
         end_odometer: 21025,
-        start_branch_id: "STL-1",
-        end_branch_id: "LA-1"
+        start_branch_name: "STL-1",
+        end_branch_name: "LA-1"
     },
     {
         registration_number: "Y77-OP5",
@@ -1369,8 +1370,8 @@ const rentals = [
         end_date: "2024-03-10",
         start_odometer: 10005,
         end_odometer: 10512,
-        start_branch_id: "NY-1",
-        end_branch_id: "NY-1"
+        start_branch_name: "NY-1",
+        end_branch_name: "NY-1"
     },
     {
         registration_number: "Z88-QQ6",
@@ -1380,8 +1381,8 @@ const rentals = [
         end_date: "2024-03-17",
         start_odometer: 30020,
         end_odometer: 30501,
-        start_branch_id: "LA-1",
-        end_branch_id: "CH-1"
+        start_branch_name: "LA-1",
+        end_branch_name: "CH-1"
     },
     {
         registration_number: "A99-RR7",
@@ -1391,8 +1392,8 @@ const rentals = [
         end_date: "2024-03-25",
         start_odometer: 40009,
         end_odometer: 41070,
-        start_branch_id: "CH-1",
-        end_branch_id: "CH-1"
+        start_branch_name: "CH-1",
+        end_branch_name: "CH-1"
     },
     {
         registration_number: "C11-ST8",
@@ -1402,8 +1403,8 @@ const rentals = [
         end_date: "2024-03-31",
         start_odometer: 50034,
         end_odometer: 50599,
-        start_branch_id: "HST-1",
-        end_branch_id: "NY-1"
+        start_branch_name: "HST-1",
+        end_branch_name: "NY-1"
     },
     {
         registration_number: "E33-UV9",
@@ -1413,8 +1414,8 @@ const rentals = [
         end_date: "2024-04-08",
         start_odometer: 11276,
         end_odometer: 12146,
-        start_branch_id: "STL-1",
-        end_branch_id: "HST-1"
+        start_branch_name: "STL-1",
+        end_branch_name: "HST-1"
     },
     {
         registration_number: "ERS-8579",
@@ -1424,8 +1425,8 @@ const rentals = [
         end_date: "2024-04-15",
         start_odometer: 41073,
         end_odometer: 41550,
-        start_branch_id: "NY-1",
-        end_branch_id: "NY-1"
+        start_branch_name: "NY-1",
+        end_branch_name: "NY-1"
     },
     {
         registration_number: "799-XYF",
@@ -1435,8 +1436,8 @@ const rentals = [
         end_date: "2024-04-23",
         start_odometer: 27082,
         end_odometer: 27852,
-        start_branch_id: "NY-1",
-        end_branch_id: "STL-1"
+        start_branch_name: "NY-1",
+        end_branch_name: "STL-1"
     },
     {
         registration_number: "D36-8BN",
@@ -1446,8 +1447,8 @@ const rentals = [
         end_date: "2024-04-30",
         start_odometer: 54012,
         end_odometer: 54312,
-        start_branch_id: "LA-1",
-        end_branch_id: "LA-1"
+        start_branch_name: "LA-1",
+        end_branch_name: "LA-1"
     },
     {
         registration_number: "H37-XY2",
@@ -1457,8 +1458,8 @@ const rentals = [
         end_date: "2024-05-08",
         start_odometer: 20034,
         end_odometer: 20484,
-        start_branch_id: "HST-1",
-        end_branch_id: "NY-1"
+        start_branch_name: "HST-1",
+        end_branch_name: "NY-1"
     },
     {
         registration_number: "B57-XY9",
@@ -1468,8 +1469,8 @@ const rentals = [
         end_date: "2024-05-16",
         start_odometer: 13058,
         end_odometer: 14015,
-        start_branch_id: "CH-1",
-        end_branch_id: "CH-1"
+        start_branch_name: "CH-1",
+        end_branch_name: "CH-1"
     },
     {
         registration_number: "G98-ZY3",
@@ -1479,8 +1480,8 @@ const rentals = [
         end_date: "2024-05-23",
         start_odometer: 91743,
         end_odometer: null,
-        start_branch_id: "CH-1",
-        end_branch_id: "CH-1"
+        start_branch_name: "CH-1",
+        end_branch_name: "CH-1"
     },
     {
         registration_number: "J88-9YH",
@@ -1490,8 +1491,8 @@ const rentals = [
         end_date: "2024-05-29",
         start_odometer: 125837,
         end_odometer: null,
-        start_branch_id: "HST-1",
-        end_branch_id: "HST-1"
+        start_branch_name: "HST-1",
+        end_branch_name: "HST-1"
     },
     {
         registration_number: "L90-3GJ",
@@ -1501,8 +1502,8 @@ const rentals = [
         end_date: "2024-06-06",
         start_odometer: 46347,
         end_odometer: 46592,
-        start_branch_id: "HST-1",
-        end_branch_id: "LA-1"
+        start_branch_name: "HST-1",
+        end_branch_name: "LA-1"
     },
     {
         registration_number: "W34-EF9",
@@ -1512,8 +1513,8 @@ const rentals = [
         end_date: "2024-06-13",
         start_odometer: 68127,
         end_odometer: null,
-        start_branch_id: "STL-1",
-        end_branch_id: "STL-1"
+        start_branch_name: "STL-1",
+        end_branch_name: "STL-1"
     },
     {
         registration_number: "Q65-4RF",
@@ -1523,12 +1524,12 @@ const rentals = [
         end_date: "2024-06-20",
         start_odometer: 30258,
         end_odometer: null,
-        start_branch_id: "NY-1",
-        end_branch_id: "NY-1"
+        start_branch_name: "NY-1",
+        end_branch_name: "NY-1"
     }
 ];
 
-// Insert rental data into the rentals collection
+// Insert rental documents into the rentals collection
 rentals.forEach(rental => {
   const car = cars.find(car => car.registration_number === rental.registration_number);
   const customer = customers.find(cust => 
@@ -1541,8 +1542,8 @@ rentals.forEach(rental => {
   );
   const start_date = new Date(rental.start_date);
   const end_date = new Date(rental.end_date);
-  const rental_days = Math.ceil((end_date - start_date) / (1000 * 60 * 60 * 24)); 
-  const total_amount = rental_days * car.daily_price;
+  const rental_days = Math.ceil((end_date - start_date) / (1000 * 60 * 60 * 24)); // Calculate rental days
+  const total_amount = rental_days * car.daily_price; // Calculate total amount
 
   db.rentals.insertOne({
     car: {
@@ -1569,11 +1570,7 @@ rentals.forEach(rental => {
     end_date: rental.end_date,
     start_odometer: rental.start_odometer,
     end_odometer: rental.end_odometer,
-    start_branch: rental.start_branch_id,
-    end_branch: rental.end_branch_id
+    start_branch_name: rental.start_branch_name,
+    end_branch_name: rental.end_branch_name
   });
 });
-
-
- 
-
