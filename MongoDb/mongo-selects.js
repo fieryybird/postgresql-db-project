@@ -1,4 +1,4 @@
-use car-retnal;
+use car-rental;
 
 
 // 1) Cars with odometer count > 50 000 km. in "Business" class.
