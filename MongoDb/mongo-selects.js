@@ -98,3 +98,41 @@ db.rentals.aggregate([
     $limit: 5
   }
 ]);
+
+
+// 5) Current financial results of each branch.
+
+db.rentals.aggregate([
+  {
+    $group: {
+      _id: "$start_branch_name",
+      totalSum: { $sum: "$agreement.total_amount" }
+    }
+  },
+  {
+    $lookup: {
+      from: "branches",
+      localField: "_id", 
+      foreignField: "branch_name",
+      as: "branch_info"
+    }
+  },
+  {
+    $unwind: "$branch_info"
+  },
+  {
+    $project: {
+      totalSum: 1,
+      _id: 1,
+      city: "$branch_info.city",
+      address: "$branch_info.address",
+      phone_number: "$branch_info.phone_number"
+    }
+  },
+  {
+    $sort: {
+      totalSum: -1
+    }
+  }
+]);
+
