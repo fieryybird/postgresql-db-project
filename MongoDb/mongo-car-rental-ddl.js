@@ -1,4 +1,4 @@
-use car_rentals;
+use car-rental;
 
 db.createCollection("cars", {
     "capped": false,
