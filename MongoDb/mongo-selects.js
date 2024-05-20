@@ -17,7 +17,7 @@ db.cars.find(
     last_inspected_odometer: 1,
     branch_name: 1
   }
-)
+);
 
 
 // 2) List of all currently active rental agreements.
@@ -57,14 +57,14 @@ db.cars.aggregate([
   {
     $group: {
       _id: "$branch_name",
-      count: { $sum: 1 }
+      available_cars: { $sum: 1 }
     }
   },
   {
     $project: {
       _id: 0,
       branch_name: "$_id",
-      count: 1
+      available_cars: 1
     }
   }
 ]);
